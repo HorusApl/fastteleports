@@ -1,0 +1,29 @@
+package me.lolok.teleports.commands.impl;
+
+import me.lolok.teleports.FastTeleportsPlugin;
+import me.lolok.teleports.commands.AbstractBaseCommand;
+import me.lolok.teleports.configurations.messages.Message;
+import me.lolok.teleports.teleports.ITeleportService;
+import me.lolok.teleports.utils.EssentialsPlayersRetriever;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+import org.bukkit.plugin.java.JavaPlugin;
+
+public class TPDeny extends AbstractBaseCommand {
+    public TPDeny(JavaPlugin plugin) {
+        super(plugin, "fasttpdeny", "fastteleports.tpdeny", "[target]", false);
+    }
+
+    @Override
+    public void execute(CommandSender sender, String[] args) {
+        ITeleportService service = FastTeleportsPlugin.getInstance().getTeleportService();
+        Player player = (Player) sender;
+        if (args.length == 0)
+            service.getRecentTeleportRequestFromTarget(player.getUniqueId()).ifPresentOrElse(request -> {
+                service.removeRequest(request.getSender(), request.getTarget());
+                request.deny();
+            }, () -> Message.NOTHING_TO_DENY_WITHOUT_SENDER.sendWithActionbar(player));
+        else
+            EssentialsPlayersRetriever.get(args[0]).ifPresentOrElse(other -> service.deny(other, player), () -> Message.USER_NOT_FOUND.sendWithActionbar(player, "target", args[0]));
+    }
+}

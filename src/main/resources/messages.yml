@@ -1,0 +1,60 @@
+preferences:
+  status:
+    allow: "On"
+    deny: "Off"
+  list:
+    empty: "&x&f&f&d&5&7&e&l» PREFERENCES &7You haven't anyone in this list."
+    header: "&x&f&f&d&5&7&e&l» PREFERENCES &7Toggled players:"
+  requests:
+    toggled: "&x&f&f&d&5&7&e&l» PREFERENCES &7Teleport requests status: &6%status%"
+    removed: "&x&f&f&d&5&7&e&l» PREFERENCES &7Teleport requests allowed for &e%target%&7"
+    added: "&x&f&f&d&5&7&e&l» PREFERENCES &7Teleport requests blocked for &e%target%&7."
+  auto-accept:
+    toggled: "&x&f&f&d&5&7&e&l» PREFERENCES &7Auto accept all requests status: &6%status%"
+    removed: "&x&f&f&d&5&7&e&l» PREFERENCES &7Auto accept disabled for &e%target%&7"
+    added: "&x&f&f&d&5&7&e&l» PREFERENCES &7Auto accept enabled for &e%target%&7."
+  action-bar:
+    toggled: "&x&f&f&d&5&7&e&l» PREFERENCES &7Action bar messages status: &6%status%"
+teleport:
+  warn:
+    message: "&6&lHEY! &eIt's not a safe place to teleport. Click here to accept anyway"
+    hover: "&e&oAccept anyway"
+  buttons:
+    accept: "&7&l[&x&3&1&f&7&6&6&lACCEPT&7&l]"
+    accept-hover: "&7Click to &x&3&1&f&7&6&6&laccept&7."
+    deny: "&7&l[&x&f&0&3&0&3&0&lDENY&7&l]"
+    deny-hover: "&7Click to &x&f&0&3&0&3&0&ldeny&7."
+  expired: "&x&f&f&d&5&7&e&l» TELEPORT &7Request has &eexpired&7."
+  sent: "&x&3&1&f&7&6&6&l» TELEPORT &7Request sent to &a%target%&7."
+  cancelled:
+    with-target: "&x&3&1&f&7&6&6&l» TELEPORT &7Cancelled teleport request to %target%&7."
+    without-target: "&x&3&1&f&7&6&6&l» TELEPORT &7Cancelled teleport request."
+  received:
+    to: "&x&3&1&f&7&6&6&l» TELEPORT &a%sender% &7requests to teleport to you."
+    here: "&x&3&1&f&7&6&6&l» TELEPORT &a%sender% &7requests you to teleport to them."
+  accepted:
+    you: "&x&3&1&f&7&6&6&l» TELEPORT &7Accepted the request from &e%sender%&7."
+    other: "&x&3&1&f&7&6&6&l» TELEPORT &7Request from &a%target% &7has been accepted."
+  denied:
+    you: "&x&f&0&3&0&3&0&l» TELEPORT &7Denied the request from &e%sender%&7."
+    other: "&x&f&0&3&0&3&0&l» TELEPORT &7Request to &e%target% &7has been denied."
+  multitude: "&x&3&1&f&7&6&6&l» TELEPORT &fYou have teleported &a%amount% &fplayers."
+errors:
+  unexpected-error: "&x&f&0&3&0&3&0&l» ERROR! &7Unexpected error occurred!"
+  not-toggled: "&x&f&0&3&0&3&0&l» ERROR! &7You can't send teleport requests to &f%target%&7!"
+  request-already-exists: "&x&f&0&3&0&3&0&l» ERROR! &7A teleport request with %target% already &fexists&7!"
+  nothing-to-cancel: "&x&f&0&3&0&3&0&l» ERROR! &7There is no request to &f%sender% &7to cancel!"
+  nothing-to-cancel-without-target: "&x&f&0&3&0&3&0&l» ERROR! &7There is no request to cancel!"
+  nothing-to-accept: "&x&f&0&3&0&3&0&l» ERROR! &7There is no request from &f%sender% &7to accept!"
+  nothing-to-accept-without-sender: "&x&f&0&3&0&3&0&l» ERROR! &7There is no request to cancel!"
+  nothing-to-deny: "&x&f&0&3&0&3&0&l» ERROR! &7There is no request from &f%sender% &7to deny!"
+  nothing-to-deny-without-sender: "&x&f&0&3&0&3&0&l» ERROR! &7There is no request to deny!"
+  wrong-usage: "&x&f&0&3&0&3&0&l» ERROR! &7Wrong usage! Use: &f%usage%"
+  execute-as-player: "&x&f&0&3&0&3&0&l» ERROR! &7Execute this command as &fplayer"
+  user-not-found: "&x&f&0&3&0&3&0&l» ERROR! &7User &c%target% &fnot found!"
+  user-not-online-anymore: "&x&f&0&3&0&3&0&l» ERROR! &fThe user is &fnot online &7anymore!"
+  sender-same-to-target: "&x&f&0&3&0&3&0&l» ERROR! &7You can't execute this command to &fyourself&7!"
+  permission-denied: "&x&f&0&3&0&3&0&l» ERROR! &7You don't have &fpermission&7!"
+  invalid-number: "&x&f&0&3&0&3&0&l» ERROR! &7You have typed an invalid number!"
+  unknown-world: "&x&f&0&3&0&3&0&l» ERROR! &7You have typed an unknown world!"
+  unknown-region: "&x&f&0&3&0&3&0&l» ERROR! &7You have typed an unknown region!"

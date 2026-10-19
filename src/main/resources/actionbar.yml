@@ -1,0 +1,28 @@
+# Use MiniMessage Format
+# https://docs.advntr.dev/minimessage/format.html
+teleport:
+  warn:
+    message: "<gold><b>HEY!</b></gold> <yellow>It's not a safe place to teleport. Type /tpyes to accept"
+  expired: "<#ffd57e><b>»</b> TELEPORT <gray>Request has <yellow>expired</yellow><gray>."
+  sent: "<#31f766><b>»</b> TELEPORT <gray>Request sent to <green>%target%</green>."
+  cancelled: "<#31f766><b>»</b> TELEPORT <gray>Cancelled teleport request to %target%."
+  received:
+    to: "<green>%sender%</green> <gray>requests to teleport to you. Type <green>/tpyes</green> or <red>/tpno</red>"
+    here: "<green>%sender%</green> <gray>requests you to teleport to them. Type <green>/tpyes</green> or <red>/tpno</red>"
+  accepted:
+    you: "<#31f766><b>»</b> TELEPORT <gray>Accepted the request from <yellow>%sender%</yellow>."
+    other: "<#31f766><b>»</b> TELEPORT <gray>Request from <green>%target%</green> has been accepted."
+  denied:
+    you: "<#f03030><b>»</b> TELEPORT <gray>Denied the request from <yellow>%sender%</yellow>."
+    other: "<#f03030><b>»</b> TELEPORT <gray>Request to <yellow>%target%</yellow> has been denied."
+errors:
+  not-toggled: "<#f03030><b>»</b> ERROR! <gray>You can't send teleport requests to <white>%target%</white>!"
+  request-already-exists: "<#f03030><b>»</b> ERROR! <gray>A teleport request with %target% already <white>exists</white>!"
+  nothing-to-cancel: "<#f03030><b>»</b> ERROR! <gray>There is no request to <white>%sender%</white> to cancel!"
+  nothing-to-cancel-without-target: "<#f03030><b>»</b> ERROR! <gray>There is no request to cancel!"
+  nothing-to-accept: "<#f03030><b>»</b> ERROR! <gray>There is no request from <white>%sender%</white> to accept!"
+  nothing-to-accept-without-sender: "<#f03030><b>»</b> ERROR! <gray>There is no request to cancel!"
+  nothing-to-deny: "<#f03030><b>»</b> ERROR! <gray>There is no request from <white>%sender%</white> to deny!"
+  nothing-to-deny-without-sender: "<#f03030><b>»</b> ERROR! <gray>There is no request to deny!"
+  user-not-found: "<#f03030><b>»</b> ERROR! <gray>User <red>%target%</red> not found!"
+  user-not-online-anymore: "<#f03030><b>»</b> ERROR! <gray>The user is not online anymore!"

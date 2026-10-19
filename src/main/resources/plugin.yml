@@ -1,0 +1,58 @@
+name: ${project.name}
+description: ${project.description}
+version: ${project.version}
+author: Lolok
+main: me.lolok.teleports.FastTeleportsPlugin
+softdepend:
+  - "Essentials"
+  - "PlaceholderAPI"
+api-version: "1.20"
+commands:
+  fasttpaccept:
+    description: "Accept teleport requests"
+    aliases:
+      - "tpaccept"
+      - "tpyes"
+  fasttpdeny:
+    description: "Deny teleport requests"
+    aliases:
+      - "tpdeny"
+      - "tpno"
+  fasttpa:
+    description: "Teleport to a player"
+    aliases:
+      - "tpa"
+  fasttpahere:
+    description: "Teleport a player to you"
+    aliases:
+      - "tpahere"
+  fasttptoggle:
+    description: "Toggle teleport requests"
+    aliases:
+      - "tptoggle"
+  fasttpauto:
+    description: "Auto accept teleport requests"
+    aliases:
+      - "tpauto"
+  fasttpactionbar:
+    description: "Receive action bar messages"
+    aliases:
+      - "tpactionbar"
+  fasttpcancel:
+    description: "Cancel teleport requests"
+    aliases:
+      - "tpcancel"
+  fasttpdatabaseupdate:
+    description: "Perform updates to the database"
+  fasttpall:
+    description: "Teleport all the online players"
+    aliases:
+      - "tpall"
+  fasttpworld:
+    description: "Teleport all the players inside a world"
+    aliases:
+      - "tpworld"
+  fasttpregion:
+    description: "Teleport all the players inside a region"
+    aliases:
+      - "tpregion"

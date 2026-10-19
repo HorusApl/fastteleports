@@ -1,0 +1,11 @@
+requests:
+  timeout: 30 # In seconds
+  # Enable this option to test the plugin that allow to send teleport requests to yourself
+  allow-yourself: false
+safety:
+  # Teleport the player always on ground to avoid trolls
+  always-on-ground: true
+  # Warn the player if he has any of these materials underfoot at their new teleport location
+  blacklisted-ground-blocks:
+    - "LAVA"
+    - "MAGMA_BLOCK"
